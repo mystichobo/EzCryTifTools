@@ -1,9 +1,22 @@
 # EzCryTifTools
 Tools to access the CryTif export dialog without Photoshop.
 
-![](https://dl.dropboxusercontent.com/s/7ojkniv9x663jlo/2016-04-01_13-27-33.gif)
-![](https://dl.dropboxusercontent.com/s/dns0q1n5fmci79f/2016-04-01_13-58-44.gif)
+![](http://i.imgur.com/QdA334X.gif)
+![](http://i.imgur.com/bLNEwEr.gif)
 
 ## Installation Instructions
-1. Press the sexy ![Download Zip](https://dl.dropboxusercontent.com/s/9ygbgkcb36h5cd9/2016-03-31_11-26-09.png) button
-2. 
+1. Press the sexy ![Download Zip](http://i.imgur.com/LxaBwHa.png) button
+2. Extract the EzCryTifTools-master folder in the zip file to wherever you want the scripts to live.
+3. Run install.bat (as administrator, it needs to be admin to create the relevant registry keys)
+4. If you need to Uninstall for whatever reason, run uninstall.bat (as administrator)
+
+## Usage
+* IMPORTANT: Your textures must all be .tif beforehand or the scripts WILL NOT WORK. Also make sure you have the correct naming convention set up for your textures (_diff for Albedo, _ddna for Normals/Gloss etc)
+* Select the folder containing your textures, right click it, and press "Convert Textures to CryTif"
+* Alternatively you can Right-Click your texture, press "Send To" and select "Convert to CryTif.bat"
+
+## Known Issues
+* Running the script over normal maps twice breaks the crap out of them, I'm not entirely sure why, but am investigating.
+* Currently I batch each RC operation into map types, so Albedo/Reflectivity/Normals, I'm not currently looping through the other types of maps. For those you can process them individually with the "Send To" menu.
+
+
